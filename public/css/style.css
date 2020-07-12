@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #343434;
+  font-size: 1rem;
+  outline: none;
+  width: 85%;
+  margin-right: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background: #6234c7;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  outline: none;
+}
+
+button:hover {
+  background: #3e0ca8;
+}
+
+button:focus {
+  background: #3e0ca8;
+}
+
+button:disabled {
+  cursor: default;
+  background: #7c5cbf94;
+}
+
+.chat {
+  position: relative;
+}
+
+.chat__side-menu {
+  width: 20%;
+  background: #282633;
+  position: absolute;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.chat__main {
+  width: 79%;
+  position: absolute;
+  left: 20%;
+  margin-left: 1%;
+}
+
+.chat__message {
+  height: 92vh;
+  overflow: auto;
+}
+
+.chat__message-form {
+  display: inline-block;
+  width: 85%;
+}
+
+.message {
+  margin-bottom: 16px;
+}
+
+.message p:first-child{
+  margin-bottom: 4px;
+}
+
+
+.message__name {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.message__meta {
+  color: #999;
+  font-size: smaller;
+}
+
+.centered-form {
+  background: #282633;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-form__box {
+  background: #eee;
+  width: 300px;
+  color: #282633;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.centered-form h1 {
+  margin-bottom: 16px;
+}
+
+.centered-form button {
+  width: 100%;
+}
+
+.centered-form input {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.room-title {
+  padding: 16px;
+  text-align: center;
+  background: #1b1a1c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-list li{
+  padding: 16px;
+  border-bottom: 1px solid #1b1a1c;
+  list-style: none;
+}
+
+.user-list li img {
+  transform: translateY(4px);
+}
